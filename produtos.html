@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Full Stack Eletro</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./funcoes.js"></script>
+</head>
+<body>
+    <!-- Menu-->
+    <nav class="menu">
+        <a id="logo" href="index.html"><img width="100px" src="./imagens/logo.png" alt="Full Stack Eletro"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas lojas</a>
+        <a href="contato.html">Fale conosco</a>
+    </nav>
+    <!-- Fim do Menu-->
+    <header>
+        <h2>Produtos</h2>
+    </header>
+    
+    <hr>
+
+    <section class="categorias">
+        <h3>Categorias</h3>
+                <ul>
+                    <li class="linha-produtos" onclick="exibir_todos()">Todos (12)</li>
+                    <li class="linha-produtos" onclick="exibir_categorias('geladeira')">Geladeiras (3)</li>
+                    <li class="linha-produtos" onclick="exibir_categorias('fogao')">Fogões (2)</li>
+                    <li class="linha-produtos" onclick="exibir_categorias('microondas')">Microondas (3)</li>
+                    <li class="linha-produtos" onclick="exibir_categorias('lavadora')">Lavadora de roupas (2)</li>
+                    <li class="linha-produtos" onclick="exibir_categorias('lavaLoucas')">Lava louças (2)</li>
+                    
+                </ul>
+    </section >
+
+        <section class="produtos">
+    <div class="box-produtos" id="geladeira" style="display:inline-block;">
+        <img src="./imagens/geladeira-brastemp.png" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Geladeira Brastemp BRM50N Frost Free Duplex 429 Litros</p>
+        <hr>
+        <p class="descrição"><strike>R$6.389,00</strike></p>
+        <p class="preço">R$5.019,00</p>
+    </div>
+
+        <div class="box-produtos" id="geladeira" style="display:inline-block;">
+        <img src="./imagens/geladeira-consul.png" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Geladeira Consul CRM43HK Frost Free Duplex</p>
+        <hr>
+        <p class="descrição"><strike>R$2.069,60</strike></p>
+        <p class="preço">R$1.910,90</p>
+    </div>
+
+    
+        <div class="box-produtos" id="geladeira" style="display:inline-block;">
+        <img src="./imagens/geladeira-eletrolux.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Geladeira/Refrigerador Electrolux 240L RE31 - Branco</p>
+        <hr>
+        <p class="descrição"><strike>R$2.199,90</strike></p>
+        <p class="preço">R$2.069,00</p>
+    </div>
+
+        <div class="box-produtos" id="fogao" style="display:inline-block; ">
+        <img src="./imagens/fogão-eletrolux.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Fogão Electrolux 5 Bocas 76SAS</p>
+        <hr>
+        <p class="descrição"><strike>R$1.209,99</strike></p>
+        <p class="preço">R$1.129,00</p>
+    </div>
+
+        <div class="box-produtos" id="fogao" style="display:inline-block;">
+        <img src="./imagens/fogao-brastemp.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Fogão Brastemp 5 Bocas</p>
+        <hr>
+        <p class="descrição"><strike>R$609,90</strike><strike>R$1.209,99</strike></p>
+        <p class="preço">R$519,70</p>
+    </div>
+
+    
+        <div class="box-produtos" id="microondas" style="display:inline-block;">
+        <img src="./imagens/microondas-electrolux.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Micro-ondas Electrolux 31 Litros ME41X</p>
+        <hr>
+        <p class="descrição"><strike>R$580,00</strike></p>
+        <p class="preço">R$409,88</p>
+    </div>
+
+   
+        <div class="box-produtos" id="microondas" style="display:inline-block;">
+        <img src="./imagens/microondas-panasonic.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Micro-ondas Panasonic 32 Litros NN-ST654WRU</p>
+        <hr>
+        <p class="descrição"><strike>R$508,70</strike></p>
+        <p class="preço">R$464,53</p>
+    </div>
+
+   
+        <div class="box-produtos" id="microondas" style="display:inline-block;">
+        <img src="./imagens/microondas-philco.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Micro-ondas Philco 30 L Espelhado 220V - PME31</p>
+        <hr>
+        <p class="descrição"><strike>R$459,00</strike></p>
+        <p class="preço">R$436,05</p>
+    </div>
+
+    
+        <div class="box-produtos" id="lavadora" style="display:inline-block;">
+        <img src="./imagens/lavadora-de-roupas-electrolux.png" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Lavadora de Roupas Turbo Electrolux LT12F, 12 Kg</p>
+        <hr>
+        <p class="descrição"><strike>R$1.600,00</strike></p>
+        <p class="preço">R$1.214,10</p>
+    </div>
+
+    
+        <div class="box-produtos" id="lavadora" style="display:inline-block;">
+        <img src="./imagens/lavadora-de-roupas-consul.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Lavadora de Roupas Consul CWB09AB, 9 Kg</p>
+        <hr>
+        <p class="descrição"><strike>R$2.399,90</strike></p>
+        <p class="preço">R$2.179,90</p>
+    </div>
+
+   
+        <div class="box-produtos" id="lavaLoucas" style="display:inline-block;">
+        <img src="./imagens/lava-louça-eletrolux.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Lava-Louça Electrolux Inox com 10 Serviços</p>
+        <hr>
+        <p class="descrição"><strike>R$3.500,00</strike></p>
+        <p class="preço">R$2.799,90</p>
+    </div>
+
+   
+        <div class="box-produtos" id="lavaLoucas" style="display:inline-block;">
+        <img src="./imagens/lava-louça-brastemp.jpg" class="cursorzoom" width="120px" onmouseenter="destaque(this)" onmouseout="tirazoom(this)">
+        <br>
+        <p class="descrição">Lava-Louças de Piso Brastemp BLF08AS 5 Programas</p>
+        <hr>
+        <p class="descrição"><strike>R$1.970,50</strike></p>
+        <p class="preço">R$1.730,61</p>
+    </div>
+</section>
+   
+
+    
+    <footer id="rodapé">
+        <p id="formas-pagamento">Formas de pagamento</p>
+        <img src="./imagens/formas-pagamento.png" alt="Formas de pagamento">
+        <p>&copy;Recode Pro</p>
+    </footer>
+</body>
+</html>
